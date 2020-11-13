@@ -15,7 +15,8 @@ app.use(json());
 app.use(
   cookieSession({
     signed: false,
-    secure: true,
+    // secure: true, for https only
+    secure: false,
   })
 );
 
